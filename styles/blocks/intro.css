@@ -1,0 +1,34 @@
+/* Intro */
+
+.intro {
+	max-height: 46.875rem;
+	background: url("../../images/covers/intro.png") bottom center / cover no-repeat;
+}
+
+/* Container */
+
+.intro__container {
+	padding-top: 19.5rem;
+	padding-bottom: 18.6875rem;
+}
+
+/* Title */
+
+.intro__title {
+	max-width: 46.125rem;
+	margin-bottom: 1.25rem;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	font-weight: 700;
+	color: var(--color-white);
+}
+
+/* Description */
+
+.intro__description {
+	font-size: 1.125rem;
+	line-height: 1.3;
+	font-weight: 400;
+	color: var(--color-white);
+}
+

@@ -1,0 +1,92 @@
+/* Header */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 4.5rem;
+	background: var(--color-white);
+}
+
+/* Container */
+
+.header__container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	column-gap: 3rem;
+	padding: 1.5rem 1rem;
+}
+
+@media (width <= 375px) {
+	.header__container {
+		justify-content: space-between;
+	}
+}
+
+/* Logo */
+
+.header__logo {
+	position: relative;
+	z-index: 5;
+	flex-basis: 10rem;
+}
+
+
+/* Menu */
+
+.header__menu {
+	flex: 1 1 auto;
+}
+
+@media (width <= 820px) {
+	.header__menu {
+		flex: 0 1 24px;
+		order: 1;
+	}
+}
+
+
+/* Links */
+
+.header__links {
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	column-gap: 1.25rem;
+}
+
+@media (width <= 820px) {
+	.header__links {
+		justify-content: flex-end;
+		flex: 1 1 auto;
+	}
+}
+
+@media (width <= 375px) {
+	.header__links {
+		display: none;
+	}
+}
+
+/* Phone */
+
+.header__phone {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.4;
+	padding: 1px 0;
+}
+
+@media (width <= 640px) {
+	.header__phone {
+		display: none;
+	}
+}
+
+.header__phone:hover {
+	color: #ffaf15;
+}
